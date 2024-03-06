@@ -128,7 +128,7 @@ indexchoosen = random.randint(0,len(testx))
 res = rctmodel(testx[indexchoosen])
 print("result : " , res)
 print("real value : " , testy[indexchoosen])
-print("result : " , abs(testy[indexchoosen] - res))
+print("error : " , abs(testy[indexchoosen] - res))
 
 
 plt.scatter(trainx[0],trainy, color='blue', label='d', zorder=1)
